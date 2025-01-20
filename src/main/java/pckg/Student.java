@@ -8,7 +8,9 @@ public class Student {
     private String name;
     private String group;
     private int course = 1;
-    private int[] marks = new int[5];
+
+    private static final int numberOfSubjects = 5;
+    private int[] marks = new int[numberOfSubjects];
 
     public Student(String name, String group) {
         this.name = name;
@@ -26,6 +28,7 @@ public class Student {
         for (int i = 0; i < marks.length; i++) {
             sum += marks[i];
         }
+
         return sum / marks.length;
     }
 
