@@ -37,7 +37,7 @@ public class Student {
         while (iterator.hasNext()) {
             Student item = iterator.next();
             if (item.getAverageMark() < 3) {
-                iterator.remove();
+                students.remove(item);
             } else {
                 item.course++;
             }
