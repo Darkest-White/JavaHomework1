@@ -9,6 +9,7 @@ public class Main {
         students.add(new Student("Pasha", "IVT-2"));
         students.add(new Student("Masha", "IVT-2"));
         students.add(new Student("Sasha", "IVT-2"));
+        //
 
         Student.printStudents(students, 1);
 
